@@ -3,14 +3,6 @@ This part of the test is closed book!
 
 1. You've started a project in JavaScript, but for some reason your runtime lacks the `map` function! Attach one to the `Array` prototype!
 
-Array.prototype.map = function(cb){
-	const newArr = [];
-	for(let i = 0; i < this.length; i++) {
-		newArr.push(cb(this[i],i,this));
-	}
-	return newArr;
-}
-
 /* As a reminder, `map` takes a callback function and returns a *new* array, with each new value created by the output of the callback function. So:
 
 const arr = [1,2,3];
